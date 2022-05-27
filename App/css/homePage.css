@@ -1,0 +1,25 @@
+.container {
+    width: 500px;
+    height: 500px;
+    margin-top: 70px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+  }
+  .p-2{
+    padding: 40px;
+  }
+  .input-group{
+    padding: 10px;
+  }
+  
+  .searchutton input[type = "submit"] {
+    background: #17C3B2;
+  }
+ .navbar-nav{
+     align-items: center;
+     
+ }
