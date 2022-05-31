@@ -380,6 +380,29 @@ function geocode(request){
     geocoder
         .geocode(request)
         .then(function(result) {
+            // const localContextMapView = new google.maps.localContext.LocalContextMapView({
+            //     element: document.getElementById("map"),
+            //     placeTypePreferences: [
+            //     { type: "restaurant" },
+            //     { type: "tourist_attraction" },
+            //     { type: "cafe"},
+            //     { type: "shopping_mall"},
+            //     { type: "supermarket"},
+            //     { type: "park"},
+            //     ],
+            //     maxPlaceCount: 12,
+            //     // directionsOptions: result,
+                
+            // });
+            // map = localContextMapView.map;
+
+            var results = result.results;
+            map.setCenter(results[0].geometry.location);
+            marker.setPosition(results[0].geometry.location);
+
+            // To make a directionOptions work
+            var originLocation = results[0].geometry.location;
+            
             const localContextMapView = new google.maps.localContext.LocalContextMapView({
                 element: document.getElementById("map"),
                 placeTypePreferences: [
@@ -391,19 +414,20 @@ function geocode(request){
                 { type: "park"},
                 ],
                 maxPlaceCount: 12,
-                // directionsOptions: result,
+                directionsOptions: { origin: originLocation},
                 
             });
             map = localContextMapView.map;
-
-            var results = result.results;
-            map.setCenter(results[0].geometry.location);
-            marker.setPosition(results[0].geometry.location);
+            new google.maps.Marker({position: originLocation, map: map,});
 
             // Zoom the map after search
             map.setOptions({
+                center: originLocation,
                 zoom: 14,
             });
+            
+            //var originLocation = results[0].geometry.location;
+            //console.log(originLocation);
 
             // Info window
             for (const key in districts) {
