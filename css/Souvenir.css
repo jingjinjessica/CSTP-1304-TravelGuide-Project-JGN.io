@@ -1,3 +1,11 @@
+.page {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
 /* Logo */
 .image {
   width: 60px;
@@ -42,7 +50,7 @@
 
 /* Souvenir area */
 .souvenir-area {
-  margin: 80px 30px;
+  margin: 60px 30px;
 }
 
 /* .row {
@@ -167,8 +175,13 @@
 }
 
 @media screen and (max-width: 800px) {
+  
+  .souvenir-area {
+    margin: 40px 15px;
+  }
+
   .row {
-    margin: 20px;
+    margin: 10px;
   }
   
   .col-md-2 {
