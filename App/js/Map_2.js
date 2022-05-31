@@ -31,22 +31,52 @@ const districts = {
   b: {
     label: "2",
     location: {
-      lat: -1.270955,
-      lng: 36.810857,
+      lat:  -6.165586605251299,   // -6.165586605251299, 106.83251568610511 Jakarta Cathedral
+      lng: 106.83251568610511,
     },
-    name: "Westlands",
+    name: "Jakarta Cathedral",
     description:
-      "With many high-end restaurants and a vibrant nightlife, Westlands attracts young professionals and their families. ",
+      "Restored Neo-Gothic-style Roman Catholic place of worship, founded in 1901 with 3 spires & 3 altars.",
   },
   c: {
     label: "3",
     location: {
-      lat: -1.311868,
-      lng: 36.838624,
+      lat: -6.130395164860602,   // -6.130395164860602, 106.81411250107685 Jakarta Old Town
+      lng: 106.81411250107685 ,
     },
-    name: "South",
+    name: "Jakarta Old Town",
     description:
-      "Known for high-rise apartment buildings, South B and South C are in high demand.",
+      "Historic district home to Dutch colonial buildings museums & a buzzy plaza with street performers.",
+  },
+  d: {
+    label: "4",
+    location: {
+      lat: -6.185009196320522,   // -6.185009196320522, 106.80877286221848 Museum of Textile
+      lng: 106.80877286221848 ,
+    },
+    name: "Museum Of Textile",
+    description:
+      "Housed in a 19th-century home, this museum features colorful exhibitions of regional textiles.",
+  },
+  e: {
+    label: "5",
+    location: {
+      lat: -6.196571143122911,   // -6.196571143122911, 106.83117417809376 Suropati Park
+      lng: 106.83117417809376,
+    },
+    name: "Suropati Park",
+    description:
+      "Urban park created in 1920 featuring a series of sculptures & fountains, plus paved paths & benches",
+  },
+  f: {
+    label: "6",
+    location: {
+      lat:-6.127412533288154,   // -6.127412533288154, 106.81212901987918 Wayang Museum
+      lng:  106.81212901987918 ,
+    },
+    name: "Wayang Museum",
+    description:
+      "Displays showcasing Javanese puppetry, including puppets, dolls, sculptures & paintings.",
   },
 };
 
@@ -85,6 +115,10 @@ function initMap() {
         placeTypePreferences: [
         { type: "restaurant" },
         { type: "tourist_attraction" },
+        { type: "cafe"},
+        { type: "shopping_mall"},
+        { type: "supermarket"},
+        { type: "park"},
         ],
         maxPlaceCount: 12,
     });
@@ -143,6 +177,10 @@ function initMap() {
                     placeTypePreferences: [
                     { type: "restaurant" },
                     { type: "tourist_attraction" },
+                    { type: "cafe"},
+                    { type: "shopping_mall"},
+                    { type: "supermarket"},
+                    { type: "park"},
                     ],
                     maxPlaceCount: 12,
                     directionsOptions: { origin: center },
@@ -347,8 +385,13 @@ function geocode(request){
                 placeTypePreferences: [
                 { type: "restaurant" },
                 { type: "tourist_attraction" },
+                { type: "cafe"},
+                { type: "shopping_mall"},
+                { type: "supermarket"},
+                { type: "park"},
                 ],
                 maxPlaceCount: 12,
+                // directionsOptions: result,
                 
             });
             map = localContextMapView.map;
@@ -359,7 +402,7 @@ function geocode(request){
 
             // Zoom the map after search
             map.setOptions({
-                zoom: 16,
+                zoom: 14,
             });
 
             // Info window
@@ -451,6 +494,10 @@ function geocode(request){
                             placeTypePreferences: [
                             { type: "restaurant" },
                             { type: "tourist_attraction" },
+                            { type: "cafe"},
+                            { type: "shopping_mall"},
+                            { type: "supermarket"},
+                            { type: "park"},
                             ],
                             maxPlaceCount: 12,
                             directionsOptions: { origin: center },
