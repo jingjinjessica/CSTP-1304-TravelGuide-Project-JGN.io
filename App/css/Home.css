@@ -7,12 +7,15 @@
 }
 .image-wrapper {
   margin-left: 340px;
-  margin-top: 148px;
-  padding: 99px 0;
+  margin-top: -5px;
   align-self: flex-start;
   background-color: #ffffff;
-  width: 250px;
-  border: solid 1px #000000;
+}
+.image-wrapper_2 {
+  margin-right: 60px;
+  margin-top: -5px;
+  align-self: flex-start;
+  background-color: #ffffff;
 }
 .group_1 {
   position:fixed;
@@ -35,10 +38,7 @@
   font-weight: 700;
   line-height: 22.52px;
 }
-.image_1 {
-  width: 77px;
-  height: 60px;
-}
+
 .image_2 {
   margin-left: 230px;
   margin-top: 2.52px;
@@ -54,4 +54,10 @@
   margin-left: 103.52px;
   width: 101px;
   height: 80px;
+}
+.text_2{
+  color: #227c9d;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 30;
 }
