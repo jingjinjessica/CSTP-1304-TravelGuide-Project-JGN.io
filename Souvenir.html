@@ -43,6 +43,18 @@
       </div>
     </div>
   </nav>
+  <div  class="search">
+    <form action="Souvenir.html" id="search">
+      <div>
+        <input class="searchinput" name="location" type="search"></input>
+        <button class="imagebtn" ><img src="https://img.icons8.com/ios/25/000000/search--v1.png" class="image_12"/></button>
+      </div>
+      <div>
+        <input type="submit"  value="Search" id="searchbox" ></input>
+      </div>
+    </form>
+
+  </div>
 
   <!-- Souvenirs Form -->
   <div class="container">
@@ -52,7 +64,7 @@
           <div class="card h-100 shadow-lg">
             <img src="./image/souvenir_img1.jpeg" alt="indonesia coffee">
             <h4>Indonesia Coffee</h4>
-            <div class="btn-submit">
+            <div  class="btn-submit">
               <input class="btn-order" type="submit" value="Order" name="submit" id="submit" onclick="openForm()">
             </div>
             <div class="form-popup1" id="myForm">
@@ -186,5 +198,7 @@
     </div>
   </div>
 </body>
-
+<script>
+  goodsShows();
+</script>
 </html>
