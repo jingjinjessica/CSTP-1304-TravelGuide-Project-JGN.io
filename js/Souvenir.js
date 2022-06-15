@@ -197,7 +197,7 @@ function closeForm6() {
 
 function radiobBtn() {
     if(document.getElementById("radio1") == true){
-        alert("Received your order! You can pick-up in store.")
+        alert("Received your order!")
         closeForm()
         closeForm2()
         closeForm3()
@@ -205,9 +205,8 @@ function radiobBtn() {
         closeForm5()
         closeForm6()
     }
-    else
-    {
-        alert("Received your order! We will deivery to your home.")
+    else {
+        alert("Received your order!.")
         closeForm()
         closeForm2()
         closeForm3()
