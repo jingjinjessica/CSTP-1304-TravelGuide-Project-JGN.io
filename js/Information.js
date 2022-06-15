@@ -1,4 +1,4 @@
-const giftData = [
+const InfoData = [
     {
         id: 1,
         name: "Vancouver",
