@@ -113,20 +113,13 @@ function goodsShows() {
 
     let containerElm = document.getElementById("container");
 
-    // let formTest = createElement({name:"div", attr:{id:"myForm", class:"form_popup1"}});
-    // formTest.innerHTML += "<form action='js/Souvenir.js' class='form-container'>";
-    // formTest.innerHTML += " <h1>Select Method of delivery: </h1>";
-    // formTest.innerHTML += " <button type='button' onclick='closeForm()'> Close </button>";
-    // formTest.innerHTML += "</form>";
-    //containerElm.appendChild(formTest);
-
     let i = 0;
     for (let good of goodsList) {
         if (i % 2 === 0) {
             var rowContainerElm = createElement({ name: "div", attr: { class: "row  d-flex flex-wrap" } });
             containerElm.appendChild(rowContainerElm);
         }
-<<<<<<< HEAD
+        
         let nameElm = createElement({name:"h4", content: good["name"]});
 
         let imageElm = createElement({name: "img", attr: {
@@ -137,28 +130,11 @@ function goodsShows() {
         let buttonTest = createElement({name:"button", attr:{onclick:"openForm()", type:"button"}});
         buttonTest.innerHTML += "Order";
         
-        //containerElm.append(formTest);
-=======
 
-        let nameElm = createElement({ name: "h4", content: good["name"] });
-
-        let imageElm = createElement({
-            name: "img", attr: {
-                src: good["picture"], class: "image_small", alt: good["name"]
-            }
-        })
-
-        let goodsOuterElm = createElement({ name: "div", attr: { class: "col-md-3 my-2 px-2" } });
-        let goodsInnerElm = createElement({ name: "div", attr: { class: "card h-100 shadow-lg" } });
-        // goodsInnerElm.appendChild(nameElm);
->>>>>>> 2acb1377575d0ce3e548a98f2bfa4e63eacc41b8
         goodsInnerElm.appendChild(imageElm);
         goodsInnerElm.appendChild(nameElm);
         goodsInnerElm.appendChild(buttonTest);
-        //containerElm.appendChild(formTest);
-        //goodsOuterElm.appendChild(formTest);
         goodsOuterElm.appendChild(goodsInnerElm);
-        //goodsInnerElm.appendChild(formTest)
         rowContainerElm.appendChild(goodsOuterElm);
         
         //rowContainerElm.append(formTest);
@@ -196,7 +172,6 @@ function goodsDetailInit() {
 
 // myForm
 function openForm() {
-    //console.log('hello');
     document.getElementById("myForm").style.display = "block";
 }
 function closeForm() {
@@ -239,35 +214,10 @@ function closeForm6() {
 }
 
 function radiobBtn() {
-<<<<<<< HEAD
-    if(document.getElementById("radio1") == true){
-        window.location = "./orderNotif.html";
-        //alert("Received your order!")
-        //closeForm()
-        // closeForm2()
-        // closeForm3()
-        // closeForm4()
-        // closeForm5()
-        // closeForm6()
-=======
     if (document.getElementById("radio1") == true) {
-        alert("Received your order!")
-        closeForm()
-        closeForm2()
-        closeForm3()
-        closeForm4()
-        closeForm5()
-        closeForm6()
->>>>>>> 2acb1377575d0ce3e548a98f2bfa4e63eacc41b8
+        window.location = "./orderNotif.html";
     }
     else {
         window.location = "./orderNotif.html";
-        // alert("Received your order!.")
-        // closeForm()
-        // closeForm2()
-        // closeForm3()
-        // closeForm4()
-        // closeForm5()
-        // closeForm6()
     }
 }
