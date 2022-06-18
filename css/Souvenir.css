@@ -57,13 +57,16 @@
   margin: 50px;
 } */
 
-#container {
-  align-items: center;
+.imagebtn {
+  background-color: white;
+  border: none;
+  color: #227C9D;
+  
 }
 
-.row {
-  align-items: center;
-  text-align: center;
+#container {
+  margin-top: 20px;
+  margin-left: 350px;
 }
 
 .col-md-2 {

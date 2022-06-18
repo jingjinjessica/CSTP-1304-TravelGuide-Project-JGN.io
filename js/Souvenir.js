@@ -13,7 +13,7 @@ const goodsItems = [
     {
         id: 2,
         name: "Moose",
-        picture: "image/souvenir_img6.jpeg",
+        picture: "image/souvenir_img5.jpeg",
         location: "vancouver"
     },
 
@@ -116,7 +116,7 @@ function goodsShows() {
     let i = 0;
     for (let good of goodsList) {
         if (i % 2 === 0) {
-            var rowContainerElm = createElement({ name: "div", attr: { class: "row  d-flex flex-wrap" } });
+            var rowContainerElm = createElement({ name: "div", attr: { class: "row" } });
             containerElm.appendChild(rowContainerElm);
         }
         
