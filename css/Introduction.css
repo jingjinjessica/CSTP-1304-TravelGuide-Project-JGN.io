@@ -1,0 +1,98 @@
+.page {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/* Logo */
+.image {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #227C9D !important;
+}
+
+.navbar-brand:hover {
+  color: #17C3B2 !important;
+}
+
+.collapse {
+  margin-left: 30px;
+}
+
+.navbar-nav li {
+  margin-right: 35px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 700;
+  color: #005757 !important;
+}
+
+.nav-link:hover,
+.nav-item i:hover {
+  color: #00CACA !important;
+}
+
+.nav-item i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #005757;
+}
+
+.container {
+  margin: 50px 20px;
+}
+
+.row {
+  margin: 10px auto;
+  padding-top: 20px;
+}
+
+.col-sm {
+  padding: 25px 30px;
+}
+
+img {
+  text-align: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+p {
+  line-height: 2;
+  font-size: 17px;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.city-title {
+  color: #005757;
+  font-weight: 700;
+  background-color: rgba(23,195,178, 0.3);
+  letter-spacing: .05em;
+  text-shadow:
+    4px 4px 0px rgba(23,195,178, 0.5),
+    7px 7px 0px rgba(0,87,87,0.2);
+}
+
+.img-1 {
+  width: 600px;
+  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 15px;
+}
+
+.img-2 {
+  width: 650px;
+  height: 480px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 15px;
+}
