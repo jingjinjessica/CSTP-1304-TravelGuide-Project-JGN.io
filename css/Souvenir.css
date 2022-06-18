@@ -57,6 +57,15 @@
   margin: 50px;
 } */
 
+#container {
+  align-items: center;
+}
+
+.row {
+  align-items: center;
+  text-align: center;
+}
+
 .col-md-2 {
   margin: 50px 50px;
 }
@@ -127,8 +136,9 @@
   position: fixed;
   bottom: 39vh;
   left: 360px;
-  border: 2px solid #f1f1f1;
+  /* border: 2px solid #f1f1f1; */
   z-index: 2;
+  
 }
 
 .form-popup2 {
@@ -161,6 +171,7 @@
   max-width: 300px;
   padding: 10px;
   background-color: white;
+  border: 1px solid black;
 }
 
 .form-container button {
@@ -172,6 +183,14 @@
 
 .form-container button:hover {
   border: 2px solid plum;
+}
+
+form {
+  margin-top: 15px;
+}
+
+span {
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 800px) {
