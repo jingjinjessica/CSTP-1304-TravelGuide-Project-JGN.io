@@ -96,3 +96,20 @@ p {
   margin-left: 20px;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 15px;
 }
+
+@media screen and (max-width: 800px) {
+
+  .img-1 {
+    width: 350px;
+    height: 280px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 15px;
+  }
+  
+  .img-2 {
+    width: 350px;
+    height: 280px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 15px;
+  }
+}

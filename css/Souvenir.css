@@ -47,6 +47,12 @@
   color: #005757;
 }
 
+#search-question h6 {
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+
+}
 
 /* Souvenir area */
 .souvenir-area {
@@ -66,7 +72,7 @@
 
 #container {
   margin-top: 20px;
-  margin-left: 350px;
+  margin-left: 420px;
 }
 
 .col-md-2 {
@@ -197,7 +203,10 @@ span {
 }
 
 @media screen and (max-width: 800px) {
-  
+  #container {
+    margin-left: 85px;
+  }
+
   .souvenir-area {
     margin: 40px 15px;
   }
@@ -241,7 +250,9 @@ span {
 }
 
 @media screen and (max-width: 1000px) {
-
+  #container {
+    margin-left: 85px;
+  }
   /* Form popup */
   .form-popup1 {
     position: initial;
